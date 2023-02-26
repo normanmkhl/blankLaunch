@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bar_title"
+    style="@style/BackgroundText.Medium"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="4"
+    android:alpha="0.75"
+    android:gravity="center"
+    android:transitionName="blank_bar_title_animation" />

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/list_shape"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/BackgroundText.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="40dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/call_log"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.test.norman.launcher.views.blankPictureTextButton
+        android:id="@+id/bt_show"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/style_for_buttons"
+        app:_src="@drawable/drop_down_on_button"
+        app:_text="@string/show"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"></com.test.norman.launcher.views.blankPictureTextButton>
+
+    <com.test.norman.launcher.views.ScrollingHelper
+        android:id="@+id/scrolling_helper"
+        android:layout_width="0dp"
+        android:layout_height="360dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <com.test.norman.launcher.views.ModularRecyclerView
+            android:id="@+id/child"
+            style="@style/ScrollStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </com.test.norman.launcher.views.ScrollingHelper>
+</androidx.constraintlayout.widget.ConstraintLayout>

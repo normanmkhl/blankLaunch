@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?> 
+<resources>
+    <string name="api_level" translatable="false">Api Level:</string>
+
+    <string name="app_name" translatable="false">blankLaunch</string>
+
+    <string name="authorities" translatable="false">com.blank.norman.blankLaunch.fileprovider</string>
+
+    <string name="empty" translatable="false" />
+
+    <string-array name="names">
+        <item>Dani Konigstein</item>
+        <item>My Family</item>
+        <item>Ido Heinemann</item>
+        <item>Klemen Skerbiš</item>
+        <item>Ido Sharon</item>
+        <item>Nadav Shalev</item>
+        <item>Kellyson Antunes</item>
+        <item>thomassth</item>
+        <item>Tadeáš Horák</item>
+        <item>Primokorn</item>
+        <item>Caibot</item>
+        <item>Zafeiris Ganas</item>
+        <item>Sahri Riza Umami</item>
+        <item>Dario Mastromattei</item>
+        <item>SIMSEUNGMIN</item>
+        <item>Qik</item>
+        <item>Vladyslav Rudakevych</item>
+        <item>Tibz Leet</item>
+        <item>Vintic</item>
+        <item>Klemen Skerbiš</item>
+        <item>Victor Arribas</item>
+        <item>Patrik Bogren</item>
+        <item>Samii571</item>
+        <item>Giorgi Abulashvili</item>
+        <item>yonniii</item>
+        <item>IzzySoft</item>
+        <item>DJCrashdummy</item>
+        <item>Yooda Or</item>
+        <item>Bait Balev</item>
+        <item>eHealthVentures</item>
+        <item>Haolam Haboker</item>
+        <item>Beni Kimron</item>
+        <item>Adam Antoshin</item>
+        <item>Shaked Aley-Raz</item>
+        <item>Edo Avidan</item>
+        <item>Ronnie Gilboa</item>
+        <item>Shay Gadot</item>
+        <item>Earboxer</item>
+    </string-array>
+
+    <string name="open_source_licenses" translatable="false">Open Source Licenses</string>
+
+    <string-array name="tasks">
+        <item>Being the Inspiration of blankLaunch</item>
+        <item>Help and support throughout the entire process</item>
+        <item>Programming counselor, Created blankLaunch Server</item>
+        <item>The Slovenian translations, Discord server, publishing articles in Slovenia and more</item>
+        <item>Being the longest and most helpful tester, Graphics Consultant</item>
+        <item>The awesome logo</item>
+        <item>The Brazilian Portuguese translations</item>
+        <item>The Chinese translations</item>
+        <item>The Czech translations</item>
+        <item>The French translations</item>
+        <item>The German translations</item>
+        <item>The Greek translations</item>
+        <item>The Indonesian translations</item>
+        <item>The Italian translations</item>
+        <item>The Korean translations</item>
+        <item>The Polish translations</item>
+        <item>The Portuguese translations</item>
+        <item>The Romanian translations</item>
+        <item>The Russian translations</item>
+        <item>The Slovenian translations</item>
+        <item>The Spanish translations</item>
+        <item>The Swedish translations</item>
+        <item>The Turkish translations</item>
+        <item>The Georgian translations</item>
+        <item>UI enhancements</item>
+        <item>GitHub constant contributor</item>
+        <item>GitHub constant contributor</item>
+        <item>Mentor</item>
+        <item>The opportunity to be in the incubator</item>
+        <item>The opportunity to be in the incubator</item>
+        <item>For hosting me and blankLaunch in live tv</item>
+        <item>Publishing an article about blankLaunch in MyNet</item>
+        <item>For uploading a Reddit post about blankLaunch which got 4.2k upvotes!</item>
+        <item>Graphics Consultant</item>
+        <item>Graphics Consultant</item>
+        <item>Tester</item>
+        <item>Tester</item>
+        <item>GitHub contributor</item>
+    </string-array>
+
+    <string name="tt_url" translatable="false">"https://collector.tracepot.com/9fc2295e"</string>
+
+    <string-array name="phone_numbers_for_tests">
+        <item>783–412–4475</item>
+        <item>(879)507–6254</item>
+        <item>+1–202–555–0120</item>
+        <item>(479)220–1841</item>
+        <item>+1–306–585–0196</item>
+        <item>(229)230–1751</item>
+    </string-array>
+</resources>

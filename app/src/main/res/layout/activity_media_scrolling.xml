@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?blank_background"
+    android:orientation="vertical">
+
+    <com.test.norman.launcher.views.blankTitleBar
+        android:id="@+id/blank_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/color_3" />
+
+    <com.test.norman.launcher.views.ScrollingHelper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.test.norman.launcher.views.ModularRecyclerView
+            android:id="@+id/child"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.test.norman.launcher.views.ScrollingHelper>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<com.test.norman.launcher.views.blankLinearLayoutButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bt_calculator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/style_for_buttons"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" />
+
+    <TextView
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textColor="?blank_text_on_button"
+        android:textSize="@dimen/medium" />
+
+</com.test.norman.launcher.views.blankLinearLayoutButton>

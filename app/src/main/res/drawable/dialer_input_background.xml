@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <stroke
+        android:width="?blank_stroke_size"
+        android:color="?blank_decoration_on_background" />
+    <corners android:radius="?blank_button_corners_radius" />
+</shape>

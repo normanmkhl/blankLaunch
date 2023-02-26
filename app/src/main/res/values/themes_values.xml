@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<resources>
+    <!--normal-->
+    <dimen name="blank_key_margin">2dp</dimen>
+    <dimen name="blank_key_end_margin">2dp</dimen>
+
+
+    <!--Light Theme-->
+    <color name="blank_background_light">#DDE2E3</color>
+    <color name="blank_background_transparent_light">#E4DDE2E3</color>
+    <color name="blank_button_light">#9AACB8</color>
+    <color name="blank_button_clicked_light">#3C455C</color>
+    <dimen name="blank_button_corners_radius_light">8dp</dimen>
+    <color name="blank_button_disabled_light">#d6d6d6</color>
+    <dimen name="blank_button_pill_corners_radius_light">500dp</dimen>
+    <color name="blank_decoration_on_background_light">@color/blank_text_on_background_light</color>
+    <color name="blank_decoration_on_button_light">@color/blank_text_on_button_light</color>
+    <color name="blank_decoration_on_key_light">@color/blank_text_on_key_light</color>
+    <color name="blank_hint_on_button_light">#585858</color>
+    <color name="blank_hint_on_background_light">@color/blank_hint_on_button_light</color>
+    <color name="blank_keyboard_key_background_light">@color/blank_button_light</color>
+    <color name="blank_keyboard_key_pressed_background_light">@color/blank_button_clicked_light
+    </color>
+    <color name="blank_selected_on_background_light">#212121</color>
+    <color name="blank_text_on_selected_light">#fff</color>
+    <color name="blank_stroke_color_light">#84000000</color>
+    <dimen name="blank_stroke_size_light">1dp</dimen>
+    <color name="blank_text_on_background_light">#000</color>
+    <color name="blank_text_on_button_light">#000</color>
+    <color name="blank_text_on_key_light">@color/blank_text_on_background_light</color>
+    <!--/Light Theme-->
+
+
+    <!--shit theme lol Theme-->
+    <color name="blank_background_skin">#4f9a94</color>
+    <color name="blank_background_transparent_skin">#E44f9a94</color>
+    <color name="blank_button_skin">#b2fef7</color>
+    <color name="blank_button_clicked_skin">#f57f17</color>
+    <dimen name="blank_button_corners_radius_skin">17dp</dimen>
+    <color name="blank_button_disabled_skin">#d6d6d6</color>
+    <dimen name="blank_button_pill_corners_radius_skin">500dp</dimen>
+    <color name="blank_decoration_on_background_skin">@color/blank_text_on_background_skin</color>
+    <color name="blank_decoration_on_button_skin">@color/blank_text_on_button_skin</color>
+    <color name="blank_decoration_on_key_skin">@color/blank_text_on_key_skin</color>
+    <color name="blank_hint_on_button_skin">#e0e0e0</color>
+    <color name="blank_hint_on_background_skin">@color/blank_hint_on_button_skin</color>
+    <color name="blank_keyboard_key_background_skin">#A2AAB0</color>
+    <color name="blank_selected_on_background_skin">#ffb04c</color>
+    <color name="blank_text_on_selected_skin">#fff</color>
+    <color name="blank_stroke_color_skin">#757575</color>
+    <dimen name="blank_stroke_size_skin">1dp</dimen>
+    <color name="blank_text_on_background_skin">#fff</color>
+    <color name="blank_text_on_button_skin">#000</color>
+    <color name="blank_text_on_key_skin">#000</color>
+    <!--/skin Theme-->
+
+
+    <!--dark Theme-->
+    <color name="blank_background_dark">#000000</color>
+    <color name="blank_background_transparent_dark">#E4000000</color>
+    <color name="blank_button_dark">#0b212f</color>
+    <color name="blank_button_clicked_dark">#44586a</color>
+    <dimen name="blank_button_corners_radius_dark">8dp</dimen>
+    <color name="blank_button_disabled_dark">#d6d6d6</color>
+    <dimen name="blank_button_pill_corners_radius_dark">500dp</dimen>
+    <color name="blank_decoration_on_background_dark">@color/blank_text_on_background_dark</color>
+    <color name="blank_decoration_on_button_dark">@color/blank_text_on_button_dark</color>
+    <color name="blank_decoration_on_key_dark">@color/blank_text_on_key_dark</color>
+    <color name="blank_hint_on_button_dark">#868686</color>
+    <color name="blank_hint_on_background_dark">@color/blank_hint_on_button_dark</color>
+    <color name="blank_keyboard_key_background_dark">@color/blank_button_dark</color>
+    <color name="blank_keyboard_key_pressed_background_dark">#F38630</color>
+    <color name="blank_selected_on_background_dark">#96A1AA</color>
+    <color name="blank_text_on_selected_dark">#000</color>
+    <color name="blank_stroke_color_dark">#84cdd4db</color>
+    <dimen name="blank_stroke_size_dark">1dp</dimen>
+    <color name="blank_text_on_background_dark">#cdd4db</color>
+    <color name="blank_text_on_button_dark">#cdd4db</color>
+    <color name="blank_text_on_key_dark">#cdd4db</color>
+    <!--/dark Theme-->
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="?attr/blank_button_corners_radius" />
+    <solid android:color="@color/color_3" />
+    <stroke
+        android:width="?attr/blank_stroke_size"
+        android:color="?attr/blank_stroke_color" />
+</shape>
+
+
+    <!--android:centerX="250%"-->
