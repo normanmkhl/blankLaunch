@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?> 
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.test.norman.launcher">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
@@ -31,7 +30,14 @@
         android:name="android.permission.WRITE_SETTINGS"
         tools:ignore="ProtectedPermissions" />
 
-    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL"
+        tools:ignore="ReservedSystemPermission" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
 
     <application
         android:name="com.test.norman.launcher.blankLaunch"
@@ -46,8 +52,9 @@
 
         <activity
             android:name="com.test.norman.launcher.activities.HomeScreenActivity"
-            android:enabled="${fullApp}"
-            android:launchMode="singleTask">
+            android:enabled="true"
+            android:launchMode="singleTask"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
@@ -60,8 +67,9 @@
         <activity
             android:name="com.test.norman.launcher.activities.DialerActivity"
 
-            android:enabled="${fullApp}"
-            android:label="@string/dialer">
+            android:enabled="true"
+            android:label="@string/dialer"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.DIAL" />
             </intent-filter>
@@ -69,59 +77,60 @@
         <activity
             android:name="com.test.norman.launcher.activities.alarms.AlarmsActivity"
 
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:label="@string/alarms" />
         <activity
             android:name="com.test.norman.launcher.activities.alarms.AlarmScreenActivity"
 
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:label="@string/alarm"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.test.norman.launcher.activities.alarms.AddAlarmActivity"
 
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:label="@string/add_alarm"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.test.norman.launcher.activities.contacts.ContactsActivity"
 
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:label="@string/contacts"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="com.test.norman.launcher.activities.contacts.SingleContactActivity"
-            android:enabled="${fullApp}" />
+            android:enabled="true" />
         <activity
             android:name="com.test.norman.launcher.activities.media.SingleVideoActivity"
 
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:label="@string/video" />
         <activity
             android:name="com.test.norman.launcher.activities.TutorialActivity"
 
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:label="@string/video_tutorials"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.test.norman.launcher.activities.SOSActivity"
 
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:label="@string/sos" />
 
         <activity
             android:name="com.test.norman.launcher.activities.SettingsActivity"
 
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:label="@string/settings" />
         <activity
             android:name="com.test.norman.launcher.activities.NotificationsActivity"
 
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:label="@string/notifications" />
         <activity
             android:name="com.test.norman.launcher.activities.FakeLauncherActivity"
-            android:enabled="false">
+            android:enabled="false"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -137,13 +146,14 @@
         <activity
             android:name="com.test.norman.launcher.activities.media.PhotosActivity"
 
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:label="@string/photos" />
         <activity
             android:name="com.test.norman.launcher.activities.media.VideosActivity"
 
-            android:enabled="${fullApp}"
-            android:label="@string/videos">
+            android:enabled="true"
+            android:label="@string/videos"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.GET_CONTENT" />
                 <data android:mimeType="video/*" />
@@ -152,75 +162,76 @@
         </activity>
         <activity
             android:name="com.test.norman.launcher.activities.media.SinglePhotoActivity"
-            android:enabled="${fullApp}" />
+            android:enabled="true" />
         <activity
             android:name="com.test.norman.launcher.activities.contacts.AddContactActivity"
-            android:enabled="${fullApp}" />
+            android:enabled="true" />
         <activity
             android:name="com.test.norman.launcher.activities.alarms.AddTimerActivity"
 
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.test.norman.launcher.activities.AppsActivity"
 
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:label="@string/apps" />
         <activity
             android:name="com.test.norman.launcher.activities.pills.PillsActivity"
 
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:label="@string/pills" />
         <activity
             android:name="com.test.norman.launcher.activities.pills.AddPillActivity"
 
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.test.norman.launcher.activities.pills.PillScreenActivity"
 
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.test.norman.launcher.activities.FontChangerActivity"
 
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.test.norman.launcher.activities.AccessibilityLevelChangerActivity"
 
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.test.norman.launcher.activities.contacts.ShareActivity"
 
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="com.test.norman.launcher.activities.CreditsActivity"
-            android:enabled="${fullApp}" />
+            android:enabled="true" />
         <activity
             android:name="com.test.norman.launcher.activities.YoutubeActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.test.norman.launcher.activities.VideoTutorialsActivity"
 
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:label="@string/video_tutorials" />
         <activity
             android:name="com.test.norman.launcher.activities.CrashActivity"
             android:label="@string/crash" />
         <activity
             android:name="com.test.norman.launcher.activities.KeyboardChangerActivity"
-            android:enabled="${fullApp}" />
+            android:enabled="true" />
         <activity
             android:name="com.test.norman.launcher.activities.pills.PillTimeSetterActivity"
-            android:enabled="${fullApp}" />
+            android:enabled="true" />
         <activity
             android:name="com.test.norman.launcher.activities.PhoneActivity"
 
-            android:enabled="${fullApp}"
-            android:label="@string/phone">
+            android:enabled="true"
+            android:label="@string/phone"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -230,27 +241,28 @@
         <activity
             android:name="com.test.norman.launcher.activities.TechnicalInfoActivity"
 
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.test.norman.launcher.activities.FeedbackActivity"
-            android:enabled="${fullApp}" />
+            android:enabled="true" />
         <activity
             android:name="com.test.norman.launcher.activities.UpdatesActivity"
-            android:enabled="${fullApp}" />
+            android:enabled="true" />
         <activity
             android:name="com.test.norman.launcher.activities.Page1EditorActivity"
 
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:label="@string/edit_home_screen" />
 
 
         <service
             android:name="com.test.norman.launcher.keyboard.blankInputMethodService"
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:permission="android.permission.BIND_INPUT_METHOD"
             android:screenOrientation="landscape"
-            android:windowSoftInputMode="adjustPan|stateHidden">
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.view.InputMethod" />
             </intent-filter>
@@ -260,9 +272,10 @@
         </service>
         <service
             android:name="com.test.norman.launcher.services.NotificationListenerService"
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:label="blank Notification Service"
-            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.service.notification.NotificationListenerService" />
             </intent-filter>
@@ -271,29 +284,32 @@
 
         <receiver
             android:name="com.test.norman.launcher.broadcast_receivers.BootUpBroadcastReceiver"
-            android:enabled="${fullApp}">
+            android:enabled="true"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
         <receiver
             android:name="com.test.norman.launcher.broadcast_receivers.LocalChangedReceiver"
-            android:enabled="${fullApp}">
+            android:enabled="true"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.LOCALE_CHANGED" />
             </intent-filter>
         </receiver>
         <receiver
             android:name="com.test.norman.launcher.broadcast_receivers.AlarmReceiver"
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:process=":remote" />
         <receiver
             android:name="com.test.norman.launcher.broadcast_receivers.ReminderReceiver"
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:process=":remote" />
         <receiver
             android:name="com.test.norman.launcher.broadcast_receivers.DownloadManagerReceiver"
-            android:enabled="${fullApp}">
+            android:enabled="true"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
             </intent-filter>
@@ -303,7 +319,7 @@
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"
-            android:enabled="${fullApp}"
+            android:enabled="true"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
