@@ -5,11 +5,11 @@ apply plugin: 'com.android.application'
 
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 33
     defaultConfig {
         applicationId "com.test.norman.launcher"
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 33
         versionCode 102
         versionName "13.0.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -54,10 +54,11 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
         sourceCompatibility JavaVersion.VERSION_1_8
     }
-
-    lintOptions {
+    namespace 'com.test.norman.launcher'
+    lint {
         abortOnError false
     }
+
 }
 
 dependencies {

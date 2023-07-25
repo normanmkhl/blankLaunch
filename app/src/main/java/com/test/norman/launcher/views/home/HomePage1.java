@@ -204,10 +204,20 @@ public class HomePage1 extends HomeView {
                 blankToast.from(homeScreen).setType(blankToast.TYPE_ERROR).setText(R.string.an_error_has_occurred).show();
             }
         });
-        setupButton(BPrefs.CUSTOM_PHOTOS_KEY, bt_photos, v -> homeScreen.startActivity(new Intent(homeScreen, PhotosActivity.class)));
-        setupButton(BPrefs.CUSTOM_CAMERA_KEY, bt_camera, v -> homeScreen.startActivity(getCameraIntent()));
-        setupButton(BPrefs.CUSTOM_VIDEOS_KEY, bt_videos, v -> homeScreen.startActivity(new Intent(homeScreen, VideosActivity.class)));
-        setupButton(BPrefs.CUSTOM_PILLS_KEY, bt_reminders, v -> homeScreen.startActivity(new Intent(homeScreen, PillsActivity.class)));
+        setupButton(BPrefs.CUSTOM_PHOTOS_KEY,
+                bt_photos,
+                v -> homeScreen.startActivity(new Intent(homeScreen, PhotosActivity.class)));
+        setupButton(
+                BPrefs.CUSTOM_CAMERA_KEY,
+                bt_camera,
+                v -> homeScreen.startActivity(getCameraIntent()));
+        setupButton(BPrefs.CUSTOM_VIDEOS_KEY,
+                bt_videos,
+                v -> homeScreen.startActivity(new Intent(homeScreen, VideosActivity.class)));
+        setupButton(
+                BPrefs.CUSTOM_PILLS_KEY,
+                bt_reminders,
+                v -> homeScreen.startActivity(new Intent(homeScreen, PillsActivity.class)));
         setupButton(BPrefs.CUSTOM_APPS_KEY, bt_apps, v -> {
             if (!homeScreen.finishedUpdatingApps)
                 homeScreen.launchAppsActivity = true;
